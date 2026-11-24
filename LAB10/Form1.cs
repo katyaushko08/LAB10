@@ -91,5 +91,10 @@ namespace LAB10
             checkBoxNotify.Checked = false;
             labelResult.Text = "";
         }
+
+        private void textBoxName_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

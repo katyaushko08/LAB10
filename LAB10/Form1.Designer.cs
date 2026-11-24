@@ -67,7 +67,7 @@
             textBoxName.Name = "textBoxName";
             textBoxName.Size = new Size(125, 27);
             textBoxName.TabIndex = 2;
-            textBoxName.Text = "Ма";
+            textBoxName.TextChanged += textBoxName_TextChanged;
             // 
             // textBoxAge
             // 
