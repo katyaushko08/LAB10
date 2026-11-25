@@ -25,10 +25,10 @@ namespace LAB10
                 return;
             }
 
-            if (!int.TryParse(textBoxAge.Text, out int age))   //проверка возраста
+            if (!int.TryParse(textBoxAge.Text, out int age) || age < 0 || age > 120)   //проверка возраста
             {
                 MessageBox.Show(
-                    "Введите возраст целым числом.",
+                    "Введите корректный возраст (целое число от 0 до 120). ",
                     "Ошибка ввода",
                     MessageBoxButtons.OK,
                     MessageBoxIcon.Warning);
@@ -90,11 +90,6 @@ namespace LAB10
             radioButtonOnline.Checked = false;
             checkBoxNotify.Checked = false;
             labelResult.Text = "";
-        }
-
-        private void textBoxName_TextChanged(object sender, EventArgs e)
-        {
-
         }
     }
 }
