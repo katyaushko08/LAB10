@@ -15,7 +15,7 @@ namespace LAB10
 
         private void buttonSubmit_Click(object sender, EventArgs e)
         {
-            if (string.IsNullOrWhiteSpace(textBoxName.Text))    //проверка имени
+            if (string.IsNullOrWhiteSpace(textBoxName.Text))    
             {
                 MessageBox.Show(
                     "Введите имя участника.",
@@ -25,7 +25,7 @@ namespace LAB10
                 return;
             }
 
-            if (!int.TryParse(textBoxAge.Text, out int age) || age < 0 || age > 120)   //проверка возраста
+            if (!int.TryParse(textBoxAge.Text, out int age) || age < 0 || age > 120)   
             {
                 MessageBox.Show(
                     "Введите корректный возраст (целое число от 0 до 120). ",
@@ -35,7 +35,7 @@ namespace LAB10
                 return;
             }
 
-            if (comboBoxEvent.SelectedItem == null)       //проверка мероприятия
+            if (comboBoxEvent.SelectedItem == null)       
             {
                 MessageBox.Show(
                     "Выберите мероприятие.",
